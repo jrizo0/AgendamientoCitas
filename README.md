@@ -5,10 +5,12 @@ npm install -> node_modules instalation
 
 === Run flask appliation in cmd (backend) ===
 
-cd ./taller_1/back/
+cd ./back/
 
-set FLASK_APP=runApplication	-> CMD
+#CMD
+set FLASK_APP=runApplication
 
+#POWERSHELL
 $env:FLASK_APP = "runApplication"	-> POWERSHELL	
 
 flask run
