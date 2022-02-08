@@ -3,14 +3,14 @@
 npm install -> node_modules instalation
 
 
-=== Run flask appliation in cmd (backend) ===
+## === Run flask appliation in cmd (backend) ===
 
 cd ./back/
 
-#CMD
+### CMD
 set FLASK_APP=runApplication
 
-#POWERSHELL
+### POWERSHELL
 $env:FLASK_APP = "runApplication"	-> POWERSHELL	
 
 flask run
