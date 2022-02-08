@@ -1,0 +1,30 @@
+<body>
+  <div class="wrapper">
+    <button type="button" class="btn btn-primary" (click)="irAInicio()"> < </button>
+    <br>
+    <br>
+    <h2>Buscar citas</h2>
+    <form (ngSubmit)="mostrarCitasByDate()">
+      <div class="input-box">
+        <!-- <p>Fecha y hora</p> -->
+        <input type="text" placeholder="Fecha" required [(ngModel)]="fecha" name="fecha">
+      </div>
+      <br>
+      <div class="input-box button">
+        <input type="submit" value="Buscar por fecha">
+      </div>
+    </form>
+
+    <br>
+
+    <!-- <div class="wrapper"> -->
+      <div class="wrapper" *ngFor="let citaActual of citasToShow; let i = index">
+        <h4>Cita {{i+1}}</h4>
+        <p>Cedula: {{citaActual.id}}</p>
+        <p>Nombres: {{citaActual.name}}</p>
+        <p>Hora: {{citaActual.hour}}</p>
+      </div>
+    <!-- </div> -->
+
+  </div>
+</body>

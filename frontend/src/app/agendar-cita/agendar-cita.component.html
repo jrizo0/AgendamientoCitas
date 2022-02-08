@@ -1,0 +1,33 @@
+<body>
+  <div class="wrapper">
+    <button type="button" class="btn btn-primary" (click)="irAInicio()"> < </button>
+    <br>
+    <br>
+    <h2>Agenda tu cita</h2>
+    <form (ngSubmit)="guardarCita()">
+      <div class="input-box">
+        <input type="text" placeholder="Cédula" required [(ngModel)]="citaToSave.id" name="id">
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Nombres" required [(ngModel)]="citaToSave.name" name="name">
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Apellidos" required [(ngModel)]="citaToSave.lastName" name="lastName">
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Edad" required [(ngModel)]="citaToSave.age" name="age">
+      </div>
+      <div class="input-box">
+        <!-- <p>Fecha y hora</p> -->
+        <input type="text" placeholder="Fecha" required [(ngModel)]="citaToSave.date" name="date">
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Hora" required [(ngModel)]="citaToSave.hour" name="hour">
+      </div>
+      <br>
+      <div class="input-box button">
+        <input type="submit" value="Agendar cita">
+      </div>
+    </form>
+  </div>
+</body>
